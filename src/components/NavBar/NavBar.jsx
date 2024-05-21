@@ -7,9 +7,8 @@ const NavBar = () => {
         <div>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    <Link to="/" className="navbar-brand"> 
+                    <Link to="/" className="navbar-brand">
                         <img src="../src/assets/logotipo-valeste.png" alt="Logo" width="50" className="d-inline-block align-text-top"></img>
-                        VALESTE
                     </Link>
                 </div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +26,7 @@ const NavBar = () => {
                             <Link to="/category/Vestimenta" className="nav-link">Vestimenta</Link>
                         </li>
                     </ul>
-                    <CartWidget />
+                    <CartWidget className="cart-widget" />
                 </div>
             </nav >
         </div >

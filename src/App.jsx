@@ -12,10 +12,12 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route path="/" element={ <ItemListContainer saludo="Bienvenidos a Valeste" />} />
+        <Route path="/" element={ <ItemListContainer saludo="Bienvenidos a Valeste" /> } />
+        <Route path="/category/:idCategory" element={ <ItemListContainer saludo="Bienvenidos a Valeste" /> } />
+        <Route path="/detail/:idProduct" element={ <ItemDetailContainer saludo="Bienvenidos a Valeste" /> } />
       </Routes>
     </BrowserRouter>
-  )
-}
+  );
+};
 
 export default App;

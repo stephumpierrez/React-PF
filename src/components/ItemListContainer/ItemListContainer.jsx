@@ -7,17 +7,17 @@ import "./itemlistcontainer.css";
 
 const ItemListContainer = ({ saludo }) => {
   const [products, setProducts] = useState([]);
-  const { idCategory } = useParams()
+  const { idCategory } = useParams();
 
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true)
+    setLoading(true);
 
     getProducts()
       .then((respuesta) => {
         if (idCategory) {
-          const productsFilter = respuesta.filter((productRes) => productRes.category === idCategory)
+          const productsFilter = respuesta.filter((productRes) => productRes.category === idCategory);
           setProducts(productsFilter);
         } else {
           setProducts(respuesta);
